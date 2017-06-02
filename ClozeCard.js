@@ -2,6 +2,8 @@ class ClozeCard {
     constructor(text, cloze) {
 
         if (text.indexOf(cloze) < 0) {
+            this.fullText = "This card does not work!";
+            this.cloze = "Oops";
             return console.error("The cloze text is not in the full text!");
         }
 
@@ -27,5 +29,6 @@ class ClozeCard {
 
 module.exports = ClozeCard;
 
+// Testing
 // var georgeWash = new ClozeCard("George Washington is the first president.", "George Washington");
 // console.log(georgeWash);
